@@ -14,8 +14,8 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41f390f6-ac45-4a00-ada1-ae0bf5cd68f0" name="Default" comment="" />
-    <ignored path="CalculatorDay8.iws" />
+    <list default="true" id="26edaddb-b8a7-4eeb-9ed9-7901a8bc24da" name="Default" comment="" />
+    <ignored path="CalculatorDay9.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
     <ui_properties />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="CalculatorDay8" />
+    <favorites_list name="CalculatorDay9" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
+      <file leaf-file-name="TestCalculator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/test/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="64" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.8238342">
+            <state line="62" column="70" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dis/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="65" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="60" column="5" selection-start="1662" selection-end="1662" vertical-scroll-proportion="2.4974093">
               <folding />
             </state>
           </provider>
@@ -112,9 +112,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dis/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dis/test/TestCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dis/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java" />
       </list>
     </option>
   </component>
@@ -158,33 +157,33 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -200,17 +199,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dis" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CalculatorDay8" />
+              <option name="myItemId" value="CalculatorDay9" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -245,24 +244,19 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.dis" />
-    </key>
-  </component>
   <component name="RunManager" selected="JUnit.TestCalculator.testMultipleDelimiter">
     <configuration default="false" name="TestCalculator.testConfigDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="com.dis.*" />
+          <option name="PATTERN" value="com.dis.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="CalculatorDay8" />
+      <module name="CalculatorDay9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dis" />
-      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
+      <option name="PACKAGE_NAME" value="com.dis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.test.TestCalculator" />
       <option name="METHOD_NAME" value="testConfigDelimiter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -282,15 +276,15 @@
     <configuration default="false" name="TestCalculator.testNegativeNumber" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="com.dis.*" />
+          <option name="PATTERN" value="com.dis.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="CalculatorDay8" />
+      <module name="CalculatorDay9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dis" />
-      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
+      <option name="PACKAGE_NAME" value="com.dis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.test.TestCalculator" />
       <option name="METHOD_NAME" value="testNegativeNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -307,19 +301,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestCalculator.testNumberGreater1000" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="TestCalculator.testGreaterOneThousand" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="com.dis.*" />
+          <option name="PATTERN" value="com.dis.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="CalculatorDay8" />
+      <module name="CalculatorDay9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dis" />
-      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
-      <option name="METHOD_NAME" value="testNumberGreater1000" />
+      <option name="PACKAGE_NAME" value="com.dis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.test.TestCalculator" />
+      <option name="METHOD_NAME" value="testGreaterOneThousand" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -335,19 +329,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="TestCalculator.testLongDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="TestCalculator.testChangeLengthDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="com.dis.*" />
+          <option name="PATTERN" value="com.dis.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="CalculatorDay8" />
+      <module name="CalculatorDay9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dis" />
-      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
-      <option name="METHOD_NAME" value="testLongDelimiter" />
+      <option name="PACKAGE_NAME" value="com.dis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.test.TestCalculator" />
+      <option name="METHOD_NAME" value="testChangeLengthDelimiter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -366,15 +360,15 @@
     <configuration default="false" name="TestCalculator.testMultipleDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
-          <option name="PATTERN" value="com.dis.*" />
+          <option name="PATTERN" value="com.dis.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="CalculatorDay8" />
+      <module name="CalculatorDay9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dis" />
-      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
+      <option name="PACKAGE_NAME" value="com.dis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.test.TestCalculator" />
       <option name="METHOD_NAME" value="testMultipleDelimiter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -483,8 +477,8 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testConfigDelimiter" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testNegativeNumber" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testNumberGreater1000" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testLongDelimiter" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testGreaterOneThousand" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testChangeLengthDelimiter" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testMultipleDelimiter" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -512,8 +506,8 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1370500914109</created>
-      <updated>1370500914109</updated>
+      <created>1370588074155</created>
+      <updated>1370588074155</updated>
     </task>
     <servers />
   </component>
@@ -536,7 +530,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67154473" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -598,19 +592,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dis/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/test/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="65" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="64" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.8238342">
+        <state line="62" column="70" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dis/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="5" selection-start="1662" selection-end="1662" vertical-scroll-proportion="2.4974093">
+          <folding />
         </state>
       </provider>
     </entry>
