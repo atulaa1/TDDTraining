@@ -13,7 +13,18 @@ public class Calculator {
             return 0;
         else
         {
-            String numbers[] = input.split(",|\n");
+            // set delimiter default
+            String delimiter = ",|\n";
+            String expression = input;
+            if(input.contains("//"))
+            {
+                delimiter = input.substring(2,3);
+                expression = input.substring(4);
+            }
+            System.out.println(delimiter);
+            System.out.println(expression);
+
+            String numbers[] = expression.split(delimiter);
             int temp = 0;
             for(String n : numbers)
             {

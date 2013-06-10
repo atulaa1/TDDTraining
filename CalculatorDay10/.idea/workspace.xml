@@ -84,7 +84,7 @@
       <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="52" selection-start="724" selection-end="724" vertical-scroll-proportion="0.6476684">
+            <state line="35" column="53" selection-start="783" selection-end="783" vertical-scroll-proportion="0.5595855">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +95,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dis/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+            <state line="21" column="46" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dis/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dis/Calculator.java" />
       </list>
     </option>
   </component>
@@ -594,14 +594,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dis/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+        <state line="21" column="46" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="724" selection-end="724" vertical-scroll-proportion="0.6476684">
+        <state line="35" column="53" selection-start="783" selection-end="783" vertical-scroll-proportion="0.5595855">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -32,7 +32,7 @@ public class TestCalculator {
     }
     @Test
     public void testConfigDelimiter() {
-        Assert.assertEquals(13, Calculator.Add("9,1,4"));
+        Assert.assertEquals(13, Calculator.Add("9,1,3"));
         Assert.assertEquals(13, Calculator.Add("//;\n10;1;2"));
     }
 
