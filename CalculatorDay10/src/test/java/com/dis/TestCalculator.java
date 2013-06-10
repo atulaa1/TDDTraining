@@ -26,5 +26,8 @@ public class TestCalculator {
         Assert.assertEquals(13, Calculator.Add("10,3"));
     }
 
-
+    @Test
+    public void testNewLineDelimiter() {
+        Assert.assertEquals(13, Calculator.Add("10,1\n2"));
+    }
 }
