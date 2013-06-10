@@ -84,7 +84,7 @@
       <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="55" selection-start="611" selection-end="611" vertical-scroll-proportion="0.86787564">
+            <state line="34" column="52" selection-start="724" selection-end="724" vertical-scroll-proportion="0.6476684">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +112,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dis/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java" />
       </list>
     </option>
   </component>
@@ -244,7 +244,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TestCalculator.testNewLineDelimiter">
+  <component name="RunManager" selected="JUnit.TestCalculator.testConfigDelimiter">
     <configuration default="false" name="TestCalculator.testEmptyString" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -357,6 +357,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="TestCalculator.testConfigDelimiter" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="com.dis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CalculatorDay10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dis" />
+      <option name="MAIN_CLASS_NAME" value="com.dis.TestCalculator" />
+      <option name="METHOD_NAME" value="testConfigDelimiter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -446,11 +474,12 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testEmptyString" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testOneNumber" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testTwoNumber" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testNewLineDelimiter" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testConfigDelimiter" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -572,7 +601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/dis/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="55" selection-start="611" selection-end="611" vertical-scroll-proportion="0.86787564">
+        <state line="34" column="52" selection-start="724" selection-end="724" vertical-scroll-proportion="0.6476684">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -30,4 +30,10 @@ public class TestCalculator {
     public void testNewLineDelimiter() {
         Assert.assertEquals(13, Calculator.Add("10,1\n2"));
     }
+    @Test
+    public void testConfigDelimiter() {
+        Assert.assertEquals(13, Calculator.Add("9,1,4"));
+        Assert.assertEquals(13, Calculator.Add("//;\n10;1;2"));
+    }
+
 }
