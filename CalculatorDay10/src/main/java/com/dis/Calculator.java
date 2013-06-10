@@ -13,7 +13,7 @@ public class Calculator {
             return 0;
         else
         {
-            String numbers[] = input.split(",");
+            String numbers[] = input.split(",|\n");
             int temp = 0;
             for(String n : numbers)
             {
