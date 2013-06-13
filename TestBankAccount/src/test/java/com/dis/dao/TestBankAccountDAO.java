@@ -1,4 +1,6 @@
 package com.dis.dao;
+import org.junit.Test;
+
 import static junit.framework.Assert.*;
 import static org.mockito.Mockito.mock;
 
@@ -11,5 +13,10 @@ import static org.mockito.Mockito.mock;
 
 public class TestBankAccountDAO {
     BankAccountDAO mockBankAccountDAO = mock(BankAccountDAO.class);
+
+    @Test
+    public void testOpenAccount() {
+
+    }
 
 }
