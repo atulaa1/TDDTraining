@@ -20,4 +20,9 @@ public class BankAccountDAO {
         // code in here manipulate with DB to get
         return null;
     }
+    public BankAccount update(BankAccount account)
+    {
+        // code here for update account
+        return null;
+    }
 }

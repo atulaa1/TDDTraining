@@ -24,6 +24,13 @@ public class BankAccountService {
         return bankAccountDAO.get(accountNumber);
     }
 
+    public BankAccount deposit(String numberAccount, int amount, String description) {
+        BankAccount account = new BankAccount();
+        account.setAccountNumber(numberAccount);
+        account.setBalance(amount);
+        return bankAccountDAO.update(account);
+    }
+
     public BankAccountDAO getBankAccountDAO() {
         return bankAccountDAO;
     }
