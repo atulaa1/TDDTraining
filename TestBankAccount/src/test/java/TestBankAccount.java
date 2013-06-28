@@ -5,6 +5,7 @@ import com.dis.model.Transaction;
 import com.dis.service.BankAccountService;
 import org.junit.*;
 import org.mockito.ArgumentCaptor;
+import org.mockito.InOrder;
 
 import java.util.*;
 
@@ -28,6 +29,7 @@ public class TestBankAccount {
         bankAccountService = new  BankAccountService();
         // inject mock dao to service
         bankAccountService.setBankAccountDAO(mockBankAccountDAO);
+        bankAccountService.setTransactionDAO(mockTransactionDAO);
 
     }
 
@@ -67,9 +69,31 @@ public class TestBankAccount {
     public void testDepositWithTransaction() {
         bankAccountService.deposit("22288",88,"Test deposit and save transaction", new Date());
         ArgumentCaptor<BankAccount> argumentCaptor = ArgumentCaptor.forClass(BankAccount.class);
-        verify(mockBankAccountDAO).update(argumentCaptor.capture());
         ArgumentCaptor<Transaction> argumentCaptorTransaction = ArgumentCaptor.forClass(Transaction.class);
-        verify(mockTransactionDAO).save(argumentCaptorTransaction.capture());
+        InOrder orders = inOrder(mockBankAccountDAO,mockTransactionDAO);
+        // verify the order of DAOs
+        orders.verify(mockTransactionDAO).save(argumentCaptorTransaction.capture());
+        orders.verify(mockBankAccountDAO).update(argumentCaptor.capture());
+
+    }
+
+    @Test
+    public void testWithdraw() {
+        BankAccount account = new BankAccount();
+        account.setAccountNumber("22288");
+        account.setBalance(30);
+        when(mockBankAccountDAO.get("22288")).thenReturn(account);
+        bankAccountService.withdraw("22288",22,"Test withdraw an account", new Date());
+        ArgumentCaptor<String> argumentCaptorGetAccount = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<BankAccount> argumentCaptorSaveAccount = ArgumentCaptor.forClass(BankAccount.class);
+        ArgumentCaptor<Transaction> argumentCaptorTransaction = ArgumentCaptor.forClass(Transaction.class);
+        InOrder orders = inOrder(mockBankAccountDAO,mockTransactionDAO);
+        // verify the order of DAOs
+
+        orders.verify(mockBankAccountDAO).get(argumentCaptorGetAccount.capture());
+        orders.verify(mockTransactionDAO).save(argumentCaptorTransaction.capture());
+        orders.verify(mockBankAccountDAO).update(argumentCaptorSaveAccount.capture());
+        Assert.assertEquals(8,argumentCaptorSaveAccount.getValue().getBalance());
     }
 
 

@@ -58,6 +58,18 @@ public class BankAccountService {
         return bankAccountDAO.update(account);
     }
 
+    public BankAccount withdraw(String numberAccount, int amount, String description, Date date) {
+        BankAccount account = bankAccountDAO.get(numberAccount);
+        account.setBalance(account.getBalance()- amount);
+        Transaction transaction = new Transaction();
+        transaction.setAccountNumber(numberAccount);
+        transaction.setAmount(amount);
+        transaction.setDescription(description);
+        transaction.setTimeExecute(date);
+        transactionDAO.save(transaction);
+        return bankAccountDAO.update(account);
+    }
+
     public BankAccountDAO getBankAccountDAO() {
         return bankAccountDAO;
     }
