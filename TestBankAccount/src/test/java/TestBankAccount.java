@@ -96,5 +96,13 @@ public class TestBankAccount {
         Assert.assertEquals(8,argumentCaptorSaveAccount.getValue().getBalance());
     }
 
+    @Test
+    public void testGetTransactionsOccurred() {
+        bankAccountService.getTransactionsOccurred("22288");
+        ArgumentCaptor<String> argumentAccount = ArgumentCaptor.forClass(String.class);
+        verify(mockTransactionDAO).findByAccountNumber(argumentAccount.capture());
+        Assert.assertEquals("22288",argumentAccount.getValue());
+    }
+
 
 }

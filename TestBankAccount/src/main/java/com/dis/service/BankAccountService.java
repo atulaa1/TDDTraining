@@ -6,6 +6,7 @@ import com.dis.model.BankAccount;
 import com.dis.model.Transaction;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -68,6 +69,10 @@ public class BankAccountService {
         transaction.setTimeExecute(date);
         transactionDAO.save(transaction);
         return bankAccountDAO.update(account);
+    }
+
+    public List<Transaction> getTransactionsOccurred(String accountNumber) {
+        return transactionDAO.findByAccountNumber(accountNumber);
     }
 
     public BankAccountDAO getBankAccountDAO() {
