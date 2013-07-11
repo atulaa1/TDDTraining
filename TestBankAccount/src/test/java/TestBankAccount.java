@@ -104,5 +104,25 @@ public class TestBankAccount {
         Assert.assertEquals("22288",argumentAccount.getValue());
     }
 
+    @Test
+    public void testGetTransactionsInDurationTime() {
+        Date fromDate = new Date("07/08/2013");
+        Date endDate =  new Date("07/11/2013");
+        bankAccountService.getTransactionsOccurred("22288",fromDate, endDate);
+        ArgumentCaptor<String> accountNumber = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Date> fromDateMock = ArgumentCaptor.forClass(Date.class);
+        ArgumentCaptor<Date> endDateMock = ArgumentCaptor.forClass(Date.class);
+        verify(mockTransactionDAO).findByAccountNumberAndTime(accountNumber.capture(),fromDateMock.capture(),endDateMock.capture());
+        Assert.assertEquals(0,fromDateMock.getValue().compareTo(fromDate));
+        Assert.assertEquals(0,endDateMock.getValue().compareTo(endDate));
+    }
+
+    @Test
+    public void testRecentTransactions() {
+        bankAccountService.getRecentTransaction(2);
+        ArgumentCaptor<Integer> numberLatest = ArgumentCaptor.forClass(Integer.class);
+        verify(mockTransactionDAO).getRecent(numberLatest.capture());
+    }
+
 
 }

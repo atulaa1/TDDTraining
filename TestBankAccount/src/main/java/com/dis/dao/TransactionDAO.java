@@ -3,6 +3,7 @@ package com.dis.dao;
 import com.dis.model.Transaction;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,4 +20,13 @@ public class TransactionDAO {
     {
         return  new ArrayList<Transaction>();
     }
+    public List<Transaction> findByAccountNumberAndTime(String accountNumber, Date from, Date to) {
+        // find by from DB base on conditions
+        return new ArrayList<Transaction>();
+    }
+    public List<Transaction> getRecent(int numberTransactions) {
+        // get n transactions latest from DB
+        return new ArrayList<Transaction>();
+    }
 }
+

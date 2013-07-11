@@ -75,6 +75,14 @@ public class BankAccountService {
         return transactionDAO.findByAccountNumber(accountNumber);
     }
 
+    public List<Transaction> getTransactionsOccurred(String accountNumber, Date from , Date to) {
+        return transactionDAO.findByAccountNumberAndTime(accountNumber,from,to);
+    }
+
+    public List<Transaction> getRecentTransaction(int numberTransactions) {
+        return transactionDAO.getRecent(numberTransactions);
+    }
+
     public BankAccountDAO getBankAccountDAO() {
         return bankAccountDAO;
     }
