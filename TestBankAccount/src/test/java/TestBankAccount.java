@@ -53,16 +53,15 @@ public class TestBankAccount {
 
     @Test
     public void testDeposit() {
-        bankAccountService.openAccount("22288");
-        bankAccountService.deposit("22288",30,"Test deposit");
         BankAccount account = new BankAccount();
         account.setAccountNumber("22288");
         account.setBalance(30);
-        when(bankAccountService.getAccount("22288")).thenReturn(account);
+        when(mockBankAccountDAO.get("22288")).thenReturn(account);
+        bankAccountService.deposit("22288",2,"Test deposit");
         ArgumentCaptor<BankAccount> argumentCaptor = ArgumentCaptor.forClass(BankAccount.class);
         verify(mockBankAccountDAO).update(argumentCaptor.capture());
         Assert.assertEquals("22288", account.getAccountNumber());
-        Assert.assertEquals(30, account.getBalance());
+        Assert.assertEquals(32, account.getBalance());
     }
 
     @Test

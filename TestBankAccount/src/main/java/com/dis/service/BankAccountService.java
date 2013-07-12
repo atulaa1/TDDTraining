@@ -30,8 +30,11 @@ public class BankAccountService {
 
     public void openAccount(String accountNumber) {
         BankAccount account = new BankAccount();
+        Date now = new Date();
         account.setAccountNumber(accountNumber);
         account.setBalance(0);
+        account.setOpenTime(now);
+
         getBankAccountDAO().save(account);
     }
 
@@ -40,16 +43,16 @@ public class BankAccountService {
     }
 
     public BankAccount deposit(String numberAccount, int amount, String description) {
-        BankAccount account = new BankAccount();
+        BankAccount account = bankAccountDAO.get(numberAccount);
         account.setAccountNumber(numberAccount);
-        account.setBalance(amount);
+        account.setBalance(account.getBalance() + amount);
         return bankAccountDAO.update(account);
     }
 
     public BankAccount deposit(String numberAccount, int amount, String description, Date date) {
-        BankAccount account = new BankAccount();
+        BankAccount account = bankAccountDAO.get(numberAccount);
         account.setAccountNumber(numberAccount);
-        account.setBalance(amount);
+        account.setBalance(account.getBalance() + amount);
         Transaction transaction = new Transaction();
         transaction.setAccountNumber(numberAccount);
         transaction.setAmount(amount);
