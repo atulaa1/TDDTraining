@@ -1,0 +1,41 @@
+package com.dis.test;
+
+import com.dis.dao.BankAccountDAO;
+import com.dis.model.BankAccount;
+import com.dis.service.BankService;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+
+import static org.mockito.Mockito.*;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: dungpx
+ * Date: 7/16/13
+ * Time: 1:48 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class BankServiceTest
+{
+    public BankAccountDAO mockBankAccountDAO = mock(BankAccountDAO.class);
+    public BankService bankService;
+
+    @Before
+    public void SetUp()
+    {
+        bankService = new BankService();
+        bankService.setBankAccountDAO(mockBankAccountDAO);
+
+    }
+
+    @Test
+    public void testOpenAccount()
+    {
+        bankService.openAccount("22288");
+        ArgumentCaptor<BankAccount> account = ArgumentCaptor.forClass(BankAccount.class);
+        verify(mockBankAccountDAO).save(account.capture());
+        Assert.assertEquals(0,account.getValue().getBalance());
+    }
+}
