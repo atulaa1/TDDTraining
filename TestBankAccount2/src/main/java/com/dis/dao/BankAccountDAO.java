@@ -15,4 +15,10 @@ public class BankAccountDAO
     {
         // save to DB
     }
+
+    public BankAccount get(String accountNumber)
+    {
+        // get from DB
+        return null;
+    }
 }

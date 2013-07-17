@@ -1,12 +1,14 @@
 package com.dis.test;
 
 import com.dis.dao.BankAccountDAO;
+import com.dis.dao.TransactionDAO;
 import com.dis.model.BankAccount;
 import com.dis.service.BankService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
+import org.mockito.InOrder;
 
 import static org.mockito.Mockito.*;
 
@@ -20,6 +22,7 @@ import static org.mockito.Mockito.*;
 public class BankServiceTest
 {
     public BankAccountDAO mockBankAccountDAO = mock(BankAccountDAO.class);
+    public TransactionDAO mockTransactionDAO = mock(TransactionDAO.class);
     public BankService bankService;
 
     @Before
@@ -37,5 +40,20 @@ public class BankServiceTest
         ArgumentCaptor<BankAccount> account = ArgumentCaptor.forClass(BankAccount.class);
         verify(mockBankAccountDAO).save(account.capture());
         Assert.assertEquals(0,account.getValue().getBalance());
+    }
+
+    @Test
+    public void testGetAccount()
+    {
+        bankService.getAccount("22288");
+        ArgumentCaptor<String> accountNumber = ArgumentCaptor.forClass(String.class);
+        verify(mockBankAccountDAO).get(accountNumber.capture());
+    }
+
+    @Test
+    public void testDeposit()
+    {
+        bankService.deposit("22288",88,"Test deposit");
+        InOrder()
     }
 }

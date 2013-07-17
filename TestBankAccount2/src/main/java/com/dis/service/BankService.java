@@ -35,4 +35,9 @@ public class BankService
         bankAccountDAO.save(bankAccount);
 
     }
+    public BankAccount getAccount(String accountNumber)
+    {
+        return bankAccountDAO.get(accountNumber);
+    }
+    public void deposit()
 }
