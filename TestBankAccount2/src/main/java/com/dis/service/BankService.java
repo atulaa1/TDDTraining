@@ -1,9 +1,12 @@
 package com.dis.service;
 
 import com.dis.dao.BankAccountDAO;
+import com.dis.dao.TransactionDAO;
 import com.dis.model.BankAccount;
+import com.dis.model.Transaction;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,6 +18,17 @@ import java.util.Date;
 public class BankService
 {
     private BankAccountDAO bankAccountDAO;
+    private TransactionDAO transactionDAO;
+
+    public TransactionDAO getTransactionDAO()
+    {
+        return transactionDAO;
+    }
+
+    public void setTransactionDAO(TransactionDAO transactionDAO)
+    {
+        this.transactionDAO = transactionDAO;
+    }
 
     public BankAccountDAO getBankAccountDAO()
     {
@@ -39,5 +53,34 @@ public class BankService
     {
         return bankAccountDAO.get(accountNumber);
     }
-    public void deposit()
+    public void deposit(String accountNumber, int amount, String description)
+    {
+        BankAccount account = bankAccountDAO.get(accountNumber);
+        account.setBalance(account.getBalance() + amount);
+        bankAccountDAO.save(account);
+        Transaction transaction = new Transaction();
+        transaction.setAccountNumber(accountNumber);
+        transaction.setAmount(amount);
+        transaction.setDescription(description);
+        transaction.setTimeExecute(new Date());
+        transactionDAO.save(transaction);
+    }
+
+    public void withdraw(String accountNumber, int amount, String description)
+    {
+        BankAccount account = bankAccountDAO.get(accountNumber);
+        account.setBalance(account.getBalance() - amount);
+        bankAccountDAO.save(account);
+        Transaction transaction = new Transaction();
+        transaction.setAccountNumber(accountNumber);
+        transaction.setAmount(amount);
+        transaction.setDescription(description);
+        transaction.setTimeExecute(new Date());
+        transactionDAO.save(transaction);
+    }
+
+    public List<Transaction> getTransactionsOccurred(String accountNumber)
+    {
+        return transactionDAO.findByAccountNumber(accountNumber);
+    }
 }

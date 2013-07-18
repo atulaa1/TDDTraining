@@ -1,6 +1,9 @@
 package com.dis.dao;
 
+import com.dis.model.Transaction;
+
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,8 +14,14 @@ import java.util.Date;
  */
 public class TransactionDAO
 {
-    public void save(String accountNumber, Integer amount, Date dateExecute, String description)
+    public void save(Transaction transaction)
     {
         // perform save transaction
+    }
+
+    public List<Transaction> findByAccountNumber(String accountNumber)
+    {
+        // get all transaction of this account
+        return null;
     }
 }
