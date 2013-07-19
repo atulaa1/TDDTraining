@@ -83,4 +83,13 @@ public class BankService
     {
         return transactionDAO.findByAccountNumber(accountNumber);
     }
+
+    public List<Transaction> getTransactionsByTime(String accountNumber, Date start, Date end)
+    {
+        return transactionDAO.getTransactionsByTime(accountNumber,start,end);
+    }
+    public List<Transaction> getTransactionRecent(int numberTransaction)
+    {
+        return transactionDAO.getRecent(numberTransaction);
+    }
 }

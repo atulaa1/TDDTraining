@@ -11,6 +11,8 @@ import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.InOrder;
 
+import java.util.Date;
+
 import static org.mockito.Mockito.*;
 
 /**
@@ -98,6 +100,22 @@ public class BankServiceTest
         ArgumentCaptor<String> accountNumber = ArgumentCaptor.forClass(String.class);
         verify(mockTransactionDAO).findByAccountNumber(accountNumber.capture());
         Assert.assertEquals("8888",accountNumber.getValue());
+    }
+
+    @Test
+    public void testGetTransactionInDurationTime()
+    {
+        Date startTime = new Date("07/07/2013");
+        Date endTime = new Date("08/08/2013");
+        bankService.getTransactionsByTime("8888",startTime, endTime);
+        verify(mockTransactionDAO).getTransactionsByTime("8888",startTime, endTime);
+    }
+
+    @Test
+    public void testGetTransactionRecent()
+    {
+        bankService.getTransactionRecent(10);
+        verify(mockTransactionDAO).getRecent(10);
     }
 
 }

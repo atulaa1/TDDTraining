@@ -24,4 +24,14 @@ public class TransactionDAO
         // get all transaction of this account
         return null;
     }
+
+    public List<Transaction> getTransactionsByTime(String accountNumber, Date start, Date end)
+    {
+        return  null;
+    }
+
+    public List<Transaction> getRecent(int numberTransactions)
+    {
+        return null;
+    }
 }
